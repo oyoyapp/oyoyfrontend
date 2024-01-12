@@ -42,7 +42,7 @@ const LoginPage = (props) => {
               <div class="card login-box-container">
                 <div class="card-body">
                   <div class="authent-logo mb-4">
-                    <span class="text-danger h1">Rayzi</span>
+                    <span class="text-danger h1">OyOy</span>
                   </div>
                   <div class="authent-text">
                     {/* <p>Welcome to Rayzi</p> */}

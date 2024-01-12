@@ -54,7 +54,7 @@ const Navbar = () => {
     <>
       <div class="page-sidebar">
         <Link to="/admin/dashboard">
-          <span className="logo text-danger">Rayzi</span>
+          <span className="logo text-danger">OyOy</span>
         </Link>
         <ul class="list-unstyled accordion-menu">
           <li

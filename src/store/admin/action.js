@@ -31,7 +31,7 @@ export const login = (data) => (dispatch) => {
     .post("admin/login", data)
     .then((res) => {
       if (res.data.status) {
-        Toast("success", "You have successfully logged in Rayzi.");
+        Toast("success", "You have successfully logged in OyOy.");
         setTimeout(() => {
           window.location.href = "/admin/dashboard";
         }, 3000);
