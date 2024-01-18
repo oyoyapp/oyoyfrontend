@@ -80,8 +80,10 @@ function App() {
               path="/changePassword/:id"
               component={ChangePassword}
             />
-            {isAuth && <Route path="/admin" component={Admin} />}
-            <Route component={Page404} />
+            {/* {isAuth &&  */}
+            <Route path="/admin" component={Admin} />
+            {/*  }
+             <Route component={Page404} /> */}
            
           </Switch>
         </BrowserRouter>
