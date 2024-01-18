@@ -50,6 +50,7 @@ import StickerTable from "../component/table/Sticker";
 // import FakePostPage from "../component/dialog/FakePostPage";
 // import FakeVideoPage from "../component/dialog/FakeVideoPage";
 
+//commented 
 //loader
 // import Spinner from "./Spinner";
 // import Profile from "./Profile.js";
@@ -61,6 +62,7 @@ const Admin = () => {
   const location = useRouteMatch();
   const history = useHistory();
 
+  //commented 
   // useEffect(() => {
   //   if (history.location.pathname === "/admin") {
   //     history.push("/admin/dashboard");
@@ -115,7 +117,7 @@ const Admin = () => {
                 exact
                 component={GiftCategoryTable}
               />
-    <Route
+              <Route
                 path={`${location.path}/theme`}
                 exact
                 component={ThemeTable}
