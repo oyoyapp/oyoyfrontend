@@ -51,9 +51,9 @@ import StickerTable from "../component/table/Sticker";
 // import FakeVideoPage from "../component/dialog/FakeVideoPage";
 
 //loader
-import Spinner from "./Spinner";
-import Profile from "./Profile.js";
-import FakeComment from "../component/table/FakeComment.js";
+// import Spinner from "./Spinner";
+// import Profile from "./Profile.js";
+// import FakeComment from "../component/table/FakeComment.js";
 
 
 
