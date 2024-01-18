@@ -204,7 +204,7 @@ console.log("labelFormate",labelFormate);
       <div className="page-title">
         <div className="row">
           <div className="col-12 col-md-6 order-md-1 order-last">
-            <h3 className="mb-3 text-white">Dashboard</h3>
+            <h3 className="mb-3 text-white">Dashboard TEST</h3>
           </div>
           <div className="col-12 col-md-6 order-md-2 order-first">
             <nav
