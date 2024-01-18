@@ -61,11 +61,11 @@ const Admin = () => {
   const location = useRouteMatch();
   const history = useHistory();
 
-  useEffect(() => {
-    if (history.location.pathname === "/admin") {
-      history.push("/admin/dashboard");
-    } // eslint-disable-next-line
-  }, []);
+  // useEffect(() => {
+  //   if (history.location.pathname === "/admin") {
+  //     history.push("/admin/dashboard");
+  //   } // eslint-disable-next-line
+  // }, []);
 
   return (
     <>
