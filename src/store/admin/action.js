@@ -32,9 +32,9 @@ export const login = (data) => (dispatch) => {
     .then((res) => {
       if (res.data.status) {
         Toast("success", "You have successfully logged in OyOy.");
-        setTimeout(() => {
-          window.location.href = "/admin/dashboard";
-        }, 3000);
+        // setTimeout(() => {
+        //   window.location.href = "/admin/dashboard";
+        // }, 3000);
         dispatch({ type: SET_ADMIN, payload: res.data.token });
       } else {
         Toast("error", res.data.message);
