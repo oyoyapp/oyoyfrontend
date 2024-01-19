@@ -50,11 +50,10 @@ import StickerTable from "../component/table/Sticker";
 // import FakePostPage from "../component/dialog/FakePostPage";
 // import FakeVideoPage from "../component/dialog/FakeVideoPage";
 
-//commented 
 //loader
-// import Spinner from "./Spinner";
-// import Profile from "./Profile.js";
-// import FakeComment from "../component/table/FakeComment.js";
+import Spinner from "./Spinner";
+import Profile from "./Profile.js";
+import FakeComment from "../component/table/FakeComment.js";
 
 
 
