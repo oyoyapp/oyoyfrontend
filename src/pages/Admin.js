@@ -61,245 +61,245 @@ const Admin = () => {
   const location = useRouteMatch();
   const history = useHistory();
 
-  //commented 
-  // useEffect(() => {
-  //   if (history.location.pathname === "/admin") {
-  //     history.push("/admin/dashboard");
-  //   } // eslint-disable-next-line
-  // }, []);
+  useEffect(() => {
+    if (history.location.pathname === "/admin") {
+      history.push("/admin/dashboard");
+    } // eslint-disable-next-line
+  }, []);
 
-  return (
-    <>
-      <div class="page-container">
-        <Navbar />
-        <div class="page-content">
-          <Topnav />
-          <div class="main-wrapper">
-            <Switch>
-              <Route
-                path={`${location.path}/dashboard`}
-                exact
-                component={Dashboard}
-              />
-              <Route
-                path={`${location.path}/profile`}
-                exact
-                component={Profile}
-              />
-              <Route
-                path={`${location.path}/banner`}
-                exact
-                component={BannerTable}
-              />
-              <Route
-                path={`${location.path}/coinplan`}
-                exact
-                component={CoinPlanTable}
-              />
-              <Route
-                path={`${location.path}/coinplan/history`}
-                exact
-                component={PurchaseCoinPlanHistoryTable}
-              />
-              <Route
-                path={`${location.path}/vipplan`}
-                exact
-                component={VIPPlanTable}
-              />
-              <Route
-                path={`${location.path}/vipplan/history`}
-                exact
-                component={PurchaseVIPPlanTable}
-              />
-              <Route
-                path={`${location.path}/giftCategory`}
-                exact
-                component={GiftCategoryTable}
-              />
-              <Route
-                path={`${location.path}/theme`}
-                exact
-                component={ThemeTable}
-              />
-              <Route
-                path={`${location.path}/giftCategory/gift`}
-                exact
-                component={GiftTable}
-              />
-              <Route
-                path={`${location.path}/giftCategory/gift/dialog`}
-                exact
-                component={GiftDialog}
-              />
-              <Route
-                path={`${location.path}/gift`}
-                exact
-                component={GiftTable}
-              />
-              <Route
-                path={`${location.path}/gift/dialog`}
-                exact
-                component={GiftDialog}
-              />
-              <Route
-                path={`${location.path}/song`}
-                exact
-                component={SongTable}
-              />
-              <Route
-                path={`${location.path}/song/dialog`}
-                exact
-                component={SongDialog}
-              />
-              <Route
-                path={`${location.path}/hashtag`}
-                exact
-                component={HashtagTable}
-              />
-              <Route
-                path={`${location.path}/level`}
-                exact
-                component={LevelTable}
-              />
-              <Route
-                path={`${location.path}/user`}
-                exact
-                component={UserTable}
-              />
-              {/* <Route
-                path={`${location.path}/fakeUser`}
-                exact
-                component={FakeUser}
-              />
-              <Route
-                path={`${location.path}/fake/fakeUserdialog`}
-                exact
-                component={FakeUserPage}
-              /> */}
-              <Route
-                path={`${location.path}/user/detail`}
-                exact
-                component={UserDetail}
-              />
-              <Route
-                path={`${location.path}/user/history`}
-                exact
-                component={UserHistory}
-              />
+  // return (
+  //   <>
+  //     <div class="page-container">
+  //       <Navbar />
+  //       <div class="page-content">
+  //         <Topnav />
+  //         <div class="main-wrapper">
+  //           <Switch>
+  //             <Route
+  //               path={`${location.path}/dashboard`}
+  //               exact
+  //               component={Dashboard}
+  //             />
+  //             <Route
+  //               path={`${location.path}/profile`}
+  //               exact
+  //               component={Profile}
+  //             />
+  //             <Route
+  //               path={`${location.path}/banner`}
+  //               exact
+  //               component={BannerTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/coinplan`}
+  //               exact
+  //               component={CoinPlanTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/coinplan/history`}
+  //               exact
+  //               component={PurchaseCoinPlanHistoryTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/vipplan`}
+  //               exact
+  //               component={VIPPlanTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/vipplan/history`}
+  //               exact
+  //               component={PurchaseVIPPlanTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/giftCategory`}
+  //               exact
+  //               component={GiftCategoryTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/theme`}
+  //               exact
+  //               component={ThemeTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/giftCategory/gift`}
+  //               exact
+  //               component={GiftTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/giftCategory/gift/dialog`}
+  //               exact
+  //               component={GiftDialog}
+  //             />
+  //             <Route
+  //               path={`${location.path}/gift`}
+  //               exact
+  //               component={GiftTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/gift/dialog`}
+  //               exact
+  //               component={GiftDialog}
+  //             />
+  //             <Route
+  //               path={`${location.path}/song`}
+  //               exact
+  //               component={SongTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/song/dialog`}
+  //               exact
+  //               component={SongDialog}
+  //             />
+  //             <Route
+  //               path={`${location.path}/hashtag`}
+  //               exact
+  //               component={HashtagTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/level`}
+  //               exact
+  //               component={LevelTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/user`}
+  //               exact
+  //               component={UserTable}
+  //             />
+  //             {/* <Route
+  //               path={`${location.path}/fakeUser`}
+  //               exact
+  //               component={FakeUser}
+  //             />
+  //             <Route
+  //               path={`${location.path}/fake/fakeUserdialog`}
+  //               exact
+  //               component={FakeUserPage}
+  //             /> */}
+  //             <Route
+  //               path={`${location.path}/user/detail`}
+  //               exact
+  //               component={UserDetail}
+  //             />
+  //             <Route
+  //               path={`${location.path}/user/history`}
+  //               exact
+  //               component={UserHistory}
+  //             />
 
-              <Route
-                path={`${location.path}/post`}
-                exact
-                component={PostTable}
-              />
-              <Route
-                path={`${location.path}/post/detail`}
-                exact
-                component={PostDetail}
-              />
-              {/* <Route
-                path={`${location.path}/post/dialog`}
-                exact
-                component={FakePostPage}
-              />
-                <Route
-                path={`${location.path}/post/fake`}
-                exact
-                component={FakePost}
-              /> */}
-              <Route
-                path={`${location.path}/video`}
-                exact
-                component={VideoTable}
-              />
-                 {/* <Route
-                path={`${location.path}/video/fake`}
-                exact
-                component={FakeVideo}
-              /> */}
-              <Route
-                path={`${location.path}/setting`}
-                exact
-                component={Setting}
-              />
-              <Route
-                path={`${location.path}/video/detail`}
-                exact
-                component={VideoDetail}
-              />
-              <Route
-                path={`${location.path}/reportedUser`}
-                exact
-                component={ReportedUserTable}
-              />
-              <Route
-                path={`${location.path}/advertisement`}
-                exact
-                component={Advertisement}
-              />
-              <Route
-                path={`${location.path}/pendingComplain`}
-                exact
-                component={PendingComplainTable}
-              />
-              <Route
-                path={`${location.path}/solvedComplain`}
-                exact
-                component={SolvedComplainTable}
-              />
-              <Route
-                path={`${location.path}/pendingRedeem`}
-                exact
-                component={PendingRedeemTable}
-              />
-              <Route
-                path={`${location.path}/acceptedRedeem`}
-                exact
-                component={AcceptedRedeemTable}
-              />
-              <Route
-                path={`${location.path}/declineRedeem`}
-                exact
-                component={DeclineRedeemTable}
-              />
-              <Route
-                path={`${location.path}/sticker`}
-                exact
-                component={StickerTable}
-              />
-              {/* <Route
-                path={`${location.path}/post/dialog`}
-                exact
-                component={FakePostPage}
-              />
-              <Route
-                path={`${location.path}/post/fake`}
-                exact
-                component={FakePost}
-              />
+  //             <Route
+  //               path={`${location.path}/post`}
+  //               exact
+  //               component={PostTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/post/detail`}
+  //               exact
+  //               component={PostDetail}
+  //             />
+  //             {/* <Route
+  //               path={`${location.path}/post/dialog`}
+  //               exact
+  //               component={FakePostPage}
+  //             />
+  //               <Route
+  //               path={`${location.path}/post/fake`}
+  //               exact
+  //               component={FakePost}
+  //             /> */}
+  //             <Route
+  //               path={`${location.path}/video`}
+  //               exact
+  //               component={VideoTable}
+  //             />
+  //                {/* <Route
+  //               path={`${location.path}/video/fake`}
+  //               exact
+  //               component={FakeVideo}
+  //             /> */}
+  //             <Route
+  //               path={`${location.path}/setting`}
+  //               exact
+  //               component={Setting}
+  //             />
+  //             <Route
+  //               path={`${location.path}/video/detail`}
+  //               exact
+  //               component={VideoDetail}
+  //             />
+  //             <Route
+  //               path={`${location.path}/reportedUser`}
+  //               exact
+  //               component={ReportedUserTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/advertisement`}
+  //               exact
+  //               component={Advertisement}
+  //             />
+  //             <Route
+  //               path={`${location.path}/pendingComplain`}
+  //               exact
+  //               component={PendingComplainTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/solvedComplain`}
+  //               exact
+  //               component={SolvedComplainTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/pendingRedeem`}
+  //               exact
+  //               component={PendingRedeemTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/acceptedRedeem`}
+  //               exact
+  //               component={AcceptedRedeemTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/declineRedeem`}
+  //               exact
+  //               component={DeclineRedeemTable}
+  //             />
+  //             <Route
+  //               path={`${location.path}/sticker`}
+  //               exact
+  //               component={StickerTable}
+  //             />
+  //             {/* <Route
+  //               path={`${location.path}/post/dialog`}
+  //               exact
+  //               component={FakePostPage}
+  //             />
+  //             <Route
+  //               path={`${location.path}/post/fake`}
+  //               exact
+  //               component={FakePost}
+  //             />
 
-              <Route
-                path={`${location.path}/video/fake`}
-                exact
-                component={FakeVideo}
-              />
-              <Route
-                path={`${location.path}/video/dialog`}
-                exact
-                component={FakeVideoPage}
-              />*/}
-                <Route
-                path={`${location.path}/comment`}
-                exact
-                component={FakeComment}
-              /> 
-            </Switch>
-            <Spinner />
-          </div>
-        </div>
-      </div>
-    </>
-  );
+  //             <Route
+  //               path={`${location.path}/video/fake`}
+  //               exact
+  //               component={FakeVideo}
+  //             />
+  //             <Route
+  //               path={`${location.path}/video/dialog`}
+  //               exact
+  //               component={FakeVideoPage}
+  //             />*/}
+  //               <Route
+  //               path={`${location.path}/comment`}
+  //               exact
+  //               component={FakeComment}
+  //             /> 
+  //           </Switch>
+  //           <Spinner />
+  //         </div>
+  //       </div>
+  //     </div>
+  //   </>
+  // );
+
 };
 
 export default Admin;
