@@ -12,8 +12,6 @@ import { IdleTimeoutManager } from "idle-timer-manager";
 //Components
 import Login from "./pages/LoginPage";
 
-
-
 import UnlockScreenPage from "./pages/UnlockScreenPage";
 import Page404 from "./pages/Page404";
 import Admin from "./pages/Admin";
@@ -71,20 +69,15 @@ function App() {
             <AuthRouter exact path="/" component={login ? Login : Registration} />
             <AuthRouter exact path="/" component={Login} />
             <AuthRouter exact path="/code" component={UpdateCode} />
-          <AuthRouter exact path="/login" component={Login} />
-          <AuthRouter path="/Registration" component={Registration} />
-            <AuthRouter  exact path="/unlock" component={UnlockScreenPage} />
+            <AuthRouter exact path="/login" component={Login} />
+            <AuthRouter path="/Registration" component={Registration} />
+            <AuthRouter exact path="/unlock" component={UnlockScreenPage} />
             <Route exact path="/forgot" component={ForgotPassword} />
-            <Route
-              exact
-              path="/changePassword/:id"
-              component={ChangePassword}
-            />
+            <Route exact path="/changePassword/:id" component={ChangePassword} />
             {/* {isAuth &&  */}
             <Route path="/admin" component={Admin} />
             {/*  }
              <Route component={Page404} /> */}
-           
           </Switch>
         </BrowserRouter>
       </Suspense>
