@@ -12,7 +12,7 @@ import { login } from "../store/admin/action";
 
 const LoginPage = (props) => {
   const [email, setEmail] = useState("demo@admin.com");
-  const [password, setPassword] = useState("123456");
+  const [password, setPassword] = useState("12345678");
   const [error, setError] = useState({
     email: "",
     password: "",
