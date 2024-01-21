@@ -81,7 +81,7 @@ function App() {
               component={ChangePassword}
             />
             {/* {isAuth &&  */}
-            <Route path="/admin" component={Admin} />
+            <Route path="/admin/dashboard" component={Admin} />
             {/*  }
              <Route component={Page404} /> */}
            

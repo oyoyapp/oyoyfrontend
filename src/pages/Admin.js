@@ -55,21 +55,15 @@ import Spinner from "./Spinner";
 import Profile from "./Profile.js";
 import FakeComment from "../component/table/FakeComment.js";
 
-
-
 const Admin = () => {
   const location = useRouteMatch();
   const history = useHistory();
 
-  useEffect(() => {
-    if (history.location.pathname === "/admin") {
-      history.push("/admin/dashboard");
-    } // eslint-disable-next-line
-  }, []);
-
-  handleRefreshClick = () => {
-    window.location.href("https://oyoy-app-vgngy.ondigitalocean.app/");
-  };
+  // useEffect(() => {
+  //   if (history.location.pathname === "/admin") {
+  //     history.push("/admin/dashboard");
+  //   } // eslint-disable-next-line
+  // }, []);
 
   return (
     <>
