@@ -347,7 +347,7 @@ const UserTable = (props) => {
                               height="50px"
                               width="50px"
                               alt="app"
-                              src={data?.image ? "https://valluvanadmatrimonial.co.in/"+data?.image : Male}
+                              src={  "https://valluvanadmatrimonial.co.in/"+data.image }
                               style={{
                                 boxShadow: "0 5px 15px 0 rgb(105 103 103 / 0%)",
                                 border: "2px solid #fff",
