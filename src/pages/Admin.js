@@ -68,8 +68,7 @@ const Admin = () => {
   }, []);
 
   handleRefreshClick = () => {
-    // Your logic here
-    history.push("/");
+    window.location.href("https://oyoy-app-vgngy.ondigitalocean.app/");
   };
 
   return (
