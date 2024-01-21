@@ -67,6 +67,11 @@ const Admin = () => {
     } // eslint-disable-next-line
   }, []);
 
+  handleRefreshClick = () => {
+    // Your logic here
+    history.push("/");
+  };
+
   return (
     <>
       <div class="page-container">
