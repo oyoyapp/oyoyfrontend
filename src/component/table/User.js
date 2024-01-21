@@ -129,7 +129,7 @@ const UserTable = (props) => {
   $(document).ready(function () {
     $("img").bind("error", function () {
       // Set the default image
-      $(this).attr("src", `${baseURL}storage/male.png`);
+      $(this).attr("src", `https://oyoy-app-vgngy.ondigitalocean.app/static/media/male.6034d647e0102fa5c39a.png`);
     });
   });
 
@@ -347,7 +347,7 @@ const UserTable = (props) => {
                               height="50px"
                               width="50px"
                               alt="app"
-                              src={data?.image ? data?.image : Male}
+                              src={data?.image ? "https://valluvanadmatrimonial.co.in/"+data?.image : Male}
                               style={{
                                 boxShadow: "0 5px 15px 0 rgb(105 103 103 / 0%)",
                                 border: "2px solid #fff",
@@ -356,7 +356,7 @@ const UserTable = (props) => {
                                 display:"block"
                               }}
                               className="mx-auto"
-                            onerror='this.src=,`${baseURL}storage/male.png`"'
+                            onerror='this.src=,`https://oyoy-app-vgngy.ondigitalocean.app/static/media/male.6034d647e0102fa5c39a.png`"'
 
                             />
                           </td>
